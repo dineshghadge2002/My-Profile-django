@@ -1,0 +1,43 @@
+## Install python 3.*
+
+
+## for windows - DOWNLOAD PYTHON FROM - https://www.python.org/downloads/
+## Set Env Variable
+
+## Linux
+## sudo yum update -y
+## sudo yum install python3 -y
+## sudo yum install python3-venv -y
+
+## python --version
+## pip --version
+############################### ##w commands for windows And ##l for Linux ############################
+## create a virtual environment
+##w py -m venv project-name
+##l python3 -m project-name
+
+## activate a virtual environment
+##w project-name\Scripts\activate.bat
+##l source myenv/bin/activate
+
+## deactivate a virtual environment
+
+## deactivate (same for ##w and ##l)
+
+## install Django
+##l python -m pip install Django
+##w py -m pip install Django
+----------------------------------
+## creating 1st project
+## mkdir myproject1
+## django-admin startproject mysite myproject1
+
+## py manage.py runserver
+
+## py manage.py startapp FrontendAPP
+
+
+
+
+
+
