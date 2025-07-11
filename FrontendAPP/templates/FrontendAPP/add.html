@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Of two Numbers</title>
+</head>
+<body>
+    <h2>Addition of two numbers:</h2>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <input type="number" name="num1" placeholder="enter num1" required>
+        <input type="number" name="num2" placeholder="enter num2" required>
+        <button type="submit">ADD</button>
+    </form>
+    {% if result is not None %}
+    <h3>Result: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
