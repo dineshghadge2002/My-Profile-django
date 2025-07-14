@@ -36,8 +36,11 @@
 
 ## py manage.py startapp FrontendAPP
 
+##########database connection
+## py manage.py makemigrations 
+## py manage.py migrate
 
 
-
-
+###### Creating admin user for admin pannel
+## python manage.py createsuperuser
 
