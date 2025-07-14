@@ -17,5 +17,5 @@ def add_num(request):
         result = add2_num(num1, num2)
         AdditionRecord.objects.create(num1 = num1, num2 = num2, result = result)
 
-    return render(request, 'FrontendAPP/add.html', {'result': result})
+    return render(request, 'FrontendAPP/index.html', {'result': result})
 
