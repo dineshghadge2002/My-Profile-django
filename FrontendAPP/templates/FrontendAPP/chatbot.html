@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with me:</title>
+</head>
+<body>
+    <h2>Chat with me:</h2>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <input type="text" name="user_input" placeholder="ask me something" required>
+        <button type="submit">GET OUTPUT</button>
+    </form>
+    {% if result is not None %}
+    <h3>Result: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>

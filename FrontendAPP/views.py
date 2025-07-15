@@ -3,6 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.http import HttpResponse
 from .addition import add2_num
+from .chatbot import chat1
 from .models import AdditionRecord
 
 
@@ -19,3 +20,10 @@ def add_num(request):
 
     return render(request, 'FrontendAPP/index.html', {'result': result})
 
+def chat(request):
+    result = None
+    if request.method == 'POST':
+        user_input = request.POST.get('user_input')
+        result = chat1(user_input)
+    
+    return render(request, 'FrontendAPP/chatbot.html', {'result': result})
