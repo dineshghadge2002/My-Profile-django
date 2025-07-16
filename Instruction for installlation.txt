@@ -44,3 +44,10 @@
 ###### Creating admin user for admin pannel
 ## python manage.py createsuperuser
 
+####### integrating simple chatbot(mistralai)
+
+## pip install mistralai
+
+###### now we are creating our project API based
+
+## pip install djangorestframework

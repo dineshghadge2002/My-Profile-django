@@ -1,14 +1,17 @@
 from django.shortcuts import render
 
 # Create your views here.
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from django.shortcuts import render
 from django.http import HttpResponse
 from .addition import add2_num
 from .chatbot import chat1
 from .models import AdditionRecord
 
-
-def index(request):
-    return HttpResponse("Hello, world. You're at the FrontendAPP index.")
+class IndexAPIView(APIView):
+    def get(self, request):
+        return render(request, 'FrontendAPP/home.html', {"message" : "Hello, world. You're at the FrontendAPP index."})
 
 def add_num(request):
     result = None
