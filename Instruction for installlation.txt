@@ -51,3 +51,4 @@
 ###### now we are creating our project API based
 
 ## pip install djangorestframework
+## add serilizer is translator between Python objects and Jason database

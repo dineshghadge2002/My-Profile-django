@@ -1,9 +1,9 @@
 from django.urls import path
-from .views import IndexAPIView
+from .views import IndexAPIView, AddAPIView, ChatAPIView
 from . import views
 
 urlpatterns = [
     path("", IndexAPIView.as_view(), name="index"),
-    path('add', views.add_num, name='add_num'),
-    path('chat', views.chat, name='chat'),
+    path('add', AddAPIView.as_view(), name='add_num'),
+    path('chat', ChatAPIView.as_view(), name='chat'),
 ]
